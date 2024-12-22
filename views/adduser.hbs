@@ -1,0 +1,41 @@
+<h3>Add New Students</h3>
+{{#if msg}}
+<div class="alert">{{msg}}</div>
+{{/if}}
+<form method="post" action="/adduser" autocomplete="false">
+<div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="name">
+</div>
+<div class="form-group">
+    <label for="grade">Grade</label>
+    <input type="text" name="grade">
+</div>
+<div class="form-group">
+    <label for="age">Age</label>
+    <input type="number" name="age">
+</div>
+<div class="form-group">
+    <label for="dob">DOB</label>
+    <input type="number" name="dob">
+</div>
+<div class="form-group">
+    <label for="address">Address</label>
+    <input type="text" name="address">
+</div>
+<div class="form-group">
+    <label for="mobile">Mobile</label>
+    <input type="number" name="mobile">
+</div>
+
+    {{!-- //submit button --}}
+    <div class="form-group">
+    <button type="submit">Save Details</button>
+    <a href="/">Home</a>
+</div>
+    {{!-- <div class="form-group">
+        <button type="submit" class="btn">Save Marks</button>
+        <a href="/student/{{student.ID}}/marks" class="btn">Cancel</a>
+    </div> --}}
+</form>
+</form>

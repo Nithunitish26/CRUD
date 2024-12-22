@@ -1,0 +1,35 @@
+<h3 class="stude">STUDENT LIST</h3>
+<p><a href="/adduser" class="addbtn">ADD USER</a></p>
+<h3 class="list">LISTS</h3>
+<table>
+    <thead>
+        <tr>
+        <td>ID</td>
+        <td>NAME</td>
+        <td>GRADE</td>
+        <td>AGE</td>
+        <td>DOB</td>
+        <td>ADDRESS</td>
+        <td>MOBILE</td>
+        <td>MARKS</td>
+        <td>EDIT</td>
+        <td>DELETE</td>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each rows}}
+        <tr>
+            <td>{{this.ID}}</td>
+            <td>{{this.NAME}}</td>
+            <td>{{this.GRADE}}</td>
+            <td>{{this.AGE}}</td>
+            <td>{{this.DOB}}</td>
+            <td>{{this.ADDRESS}}</td>
+            <td>{{this.MOBILE}}</td>
+            <td><a class="marks" href="/student/{{this.ID}}/marks">View Marks</a></td>
+            <td><a class="edit" href="/edituser/{{this.ID}}">EDIT</a></td>
+            <td><a onclick="return confirm('Are you sure?')" class="delete" href="/deleteuser/{{this.ID}}">DELETE</a></td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>

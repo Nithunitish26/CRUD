@@ -1,0 +1,22 @@
+{
+  "name": "nit_crud",
+  "version": "1.0.0",
+  "description": "create read update delete",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NITISH",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
